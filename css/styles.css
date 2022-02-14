@@ -12,7 +12,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(#98bbf3, #FFFF); }
+  background-color: linear-gradient(#ffffff #647692); }
 
 .wrapper {
   position: relative;
@@ -23,7 +23,7 @@ body {
   width: 100%;
   min-height: 100vh;
   border-top: 2px solid #173f97;
-  background: linear-gradient(#1e1e2f, #1e1e24);
+  background: linear-gradient(#ffffff #647692);
   transition: .5s;
   float: right; }
 
@@ -35,7 +35,7 @@ body {
   margin-left: 20px;
   z-index: 1024;
   border-radius: 5px;
-  background: linear-gradient(#F5F6FA, #b3bee9);
+  background: #6b86ff;
   transition-property: top,bottom,width;
   transition-duration: .2s,.2s,.35s;
   transition-timing-function: linear,linear,ease; }
@@ -60,11 +60,12 @@ body {
 /* Header */
 nav {
   width: 100%;
+  height: 15rem;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 35px 0px 20px; }
+  justify-content: center; }
 
 .navbar-bar {
+  background-color: #6b86ff;
   position: relative;
   display: flex;
   align-items: center; }
@@ -79,7 +80,7 @@ nav {
   margin-left: 30px; }
 
 .navbar-bar p {
-  color: #030000;
+  color: black;
   font-family: 'Poppins';
   font-weight: 300;
   font-size: 16px;
@@ -163,7 +164,7 @@ nav {
   width: 90%;
   right: 15px;
   bottom: 0;
-  background: #fff;
+  background: black;
   z-index: 1; }
 
 .logo-rc img {
@@ -175,7 +176,7 @@ nav {
   display: block;
   white-space: nowrap;
   font-size: 13px;
-  color: #fff;
+  color: #1E1E2E;
   font-family: 'Poppins';
   overflow: hidden;
   margin-left: 10px;
@@ -202,7 +203,7 @@ nav {
 .nav ul li a span {
   display: block;
   transition: 0.5s !important;
-  color: #fff;
+  color: #0000;
   font-size: 12px;
   text-decoration: none;
   font-family: 'Poppins';
@@ -232,7 +233,7 @@ nav {
   margin-bottom: 20px; }
 
 .card {
-  background: #27293d;
+  background: #6b86ff;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1); }
@@ -310,7 +311,7 @@ nav {
   font-size: 10px; }
 
 .header-card h6 {
-  color: #fff;
+  color: #0000;
   display: flex;
   justify-content: flex-end;
   font-family: 'Poppins';

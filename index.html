@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Soluciones en Tecnología">
-    <meta description="VABAJA, somos tu proveedor de tecnología y soluciones en sistemas para la industria, comercio y residencia, estamos a tus ordenes.">
+    <meta
+        description="VABAJA, somos tu proveedor de tecnología y soluciones en sistemas para la industria, comercio y residencia, estamos a tus ordenes.">
     <meta keywords="site, computo, sistemas, IT">
     <script src="https://kit.fontawesome.com/4413e8152d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap"
@@ -16,14 +17,15 @@
 </head>
 
 <body>
+
     <div class="wrapper">
         <!--Sidebar-->
         <div class="sidebar" id="sidebar">
             <!--Contenedor de nuestro sidebar-->
             <div class="sidebar-wrapper">
                 <div class="logo-rc">
-                    <img src="./img/icon-nuxt.ico" />
-                    <span>VABAJA</span>
+                    <img src="" />
+                    <span>Bienvenido</span>
                 </div>
                 <div class="nav">
                     <ul>
@@ -56,34 +58,36 @@
             </div>
         </div>
         <!--Contiene todo el cuerpo del panel-->
-        <div class="main-panel">
-            <!--Header de la página-->
-            <nav class="navbar">
-                <!--Botones que animaran nuestro sidebar-->
-                <div class="navbar-bar" id="content-buttons">
-                    <!--El boton por defecto de nuestro header-->
-                    <button id="boton-sidebar"><i class="fas fa-bars"></i></button>
-                    <!--El boton que aparecera desde el modo tablet-->
-                    <button id="boton-sidebar_left"><i class="fas fa-qrcode"></i></button>
-                    <!--El boton que aparecera si es que nuestro dashboard hace scroll-->
-                    <div class="navbar-bar_fixed" id="content-button_fixed">
-                        <button id="boton-sidebar_fixed"><i class="fas fa-chart-bar"></i></button>
-                    </div>
-                    <p>Inicio</p>
-                </div>
-                
-                <!--Simula opciones sobre botones a la derecha de nuestro header -->
-                <div class="navbar-options">
-                    <i class="fas fa-search"></i>
-                    <i class="far fa-bell"></i>
-                    <div class="photo">
-                        <img src="images/foto.jpeg" />
-                    </div>
-                </div>
-            </nav>
+        <!--Header de la página-->
+        <nav class="navbar-bar">
 
-            <!-- El contenedor de graficas de nuestro panel administrativo -->
+            <img src="./img/logo-vabaja-sinfondo.-1067x600.png" alt="logo-hero">
+
+        </nav>
+
+        <div class="main-panel">
+
             <div class="content" id="main">
+
+                <div class="grid-row_4">
+                    <div class="card">
+
+
+
+
+                        <div class="header-card">
+                            <h6>Somos tu proveedor de soluciones en tecnología</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="./img/fibra.jpg" alt="fibra">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- El contenedor de graficas de nuestro panel administrativo -->
+
 
                 <!--Footer o pies de nuestro dashboard-->
                 <div class="footer-dashboard">
@@ -101,7 +105,6 @@
 </html>
 
 <script>
-
     var ctx = document.getElementById('myChart').getContext('2d');
     var ctx2 = document.getElementById('myChart2').getContext('2d');
     var ctx3 = document.getElementById('myChart3').getContext('2d');
@@ -140,7 +143,9 @@
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            legend: { display: false },
+            legend: {
+                display: false
+            },
             tooltips: {
                 backgroundColor: "#fff",
                 titleFontColor: "#4c4c4c",
@@ -197,7 +202,9 @@
         },
         options: {
             responsive: true,
-            legend: { display: false },
+            legend: {
+                display: false
+            },
             maintainAspectRatio: false,
             tooltips: {
                 backgroundColor: "#fff",
@@ -258,7 +265,9 @@
         },
         options: {
             responsive: true,
-            legend: { display: false },
+            legend: {
+                display: false
+            },
             maintainAspectRatio: false,
             tooltips: {
                 backgroundColor: "#fff",
@@ -319,7 +328,9 @@
         },
         options: {
             responsive: true,
-            legend: { display: false },
+            legend: {
+                display: false
+            },
             maintainAspectRatio: false,
             tooltips: {
                 backgroundColor: "#fff",
