@@ -20,12 +20,15 @@
 
 <body>
 
+
     <div class="wrapper">
+
         <!--Sidebar-->
         <div class="sidebar" id="sidebar">
             <!--Contenedor de nuestro sidebar-->
             <div class="sidebar-wrapper">
-                <div class="logo-rc">
+
+                <div class="menu">
                     <img src="" />
                     <span>Bienvenido</span>
                 </div>
@@ -59,15 +62,29 @@
                 </div>
             </div>
         </div>
+
         <!--Contiene todo el cuerpo del panel-->
         <!--Header de la página-->
+        <div class="main-panel">
         <nav class="navbar-bar">
+            <div class="navbar-bar" id="content-buttons">
+                <!--Boton por defecto de nuestro header-->
+                <button id="boton-sidebar"><i class="fas fa-bars"></i></button>
+                <!--Bton que aparecera desde el modo tablet-->
+                <button id="boton-sidebar_left"><i class="fas fa-bars"></i></button>
+                <!--Boton que aparecera si es que nuestro dashboard hace scroll-->
+                <div class="navbar-bar_fixed" id="content-button_fixed">
+                    <button id="boton-sidebar_fixed"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
 
             <img src="./img/logo-vabaja-sinfondo.-1067x600.png" alt="logo-hero">
 
+
         </nav>
 
-        <div class="main-panel">
+        
+            <!--Botones que animaran nuestro sidebar-->
 
             <div class="content" id="main">
 
@@ -130,23 +147,32 @@
 
                 <!--Footer o pies de nuestro dashboard-->
 
+                <div class="footer-dashboard">
+        
+                    <p>
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>© VABAJA, Listen, Learn, Improve & Repeat.
+                    </p>
+        
+                    <script src="/js/main.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                        crossorigin="anonymous">
+                    </script>
+        
+                </div>
             </div>
         </div>
-        <div class="footer-dashboard">
-            <p>© 2022. VABAJA, Listen, Learn, Improve & Repeat.</p>
-        </div>
-        <script src="/js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    </div>
 </body>
 
 </html>
 
-<!-- <script>
+<script>
     var ctx = document.getElementById('myChart').getContext('2d');
     var ctx2 = document.getElementById('myChart2').getContext('2d');
     var ctx3 = document.getElementById('myChart3').getContext('2d');
@@ -404,4 +430,4 @@
             }
         }
     });
-</script> -->
+</script>
