@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Paleta de Colores*/
+/* linear-gradient(#cad3ec, #dcdce6); */
 /*Globales*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -17,7 +18,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(#2f31df, #b9c0ff);
+  background: #cad3ec;
   /* linear-gradient(#e3e3f3,#9d9da8); */ }
 
 .wrapper {
@@ -29,7 +30,7 @@ body {
   width: 100%;
   min-height: 100vh;
   border-top: 4px solid #d0d0ff;
-  background: linear-gradient(#2f31df, #b9c0ff);
+  background: #cad3ec;
   /* linear-gradient(#e3e3f3,#9d9da8); */
   transition: .5s;
   float: right; }
@@ -43,7 +44,7 @@ body {
   z-index: 1024;
   border-radius: 5px;
   /* background: linear-gradient(#97174D,#ca3372); */
-  background: linear-gradient(#e7e7e7, #b8bfff);
+  background: #e2e2ff;
   transition-property: top,bottom,width;
   transition-duration: .2s,.2s,.35s;
   transition-timing-function: linear,linear,ease; }
@@ -240,7 +241,7 @@ nav {
   margin-bottom: 20px; }
 
 .card {
-  background: linear-gradient(#e7e7e7, #b8bfff);
+  background: #e2e2ff;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1); }
