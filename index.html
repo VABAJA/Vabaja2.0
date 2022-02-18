@@ -19,16 +19,13 @@
 </head>
 
 <body>
-
-
     <div class="wrapper">
-
         <!--Sidebar-->
         <div class="sidebar" id="sidebar">
             <!--Contenedor de nuestro sidebar-->
             <div class="sidebar-wrapper">
 
-                <div class="menu">
+                <div class="logo-rc">
                     <img src="" />
                     <span>Bienvenido</span>
                 </div>
@@ -66,57 +63,56 @@
         <!--Contiene todo el cuerpo del panel-->
         <!--Header de la página-->
         <div class="main-panel">
-        <nav class="navbar-bar">
-            <div class="navbar-bar" id="content-buttons">
-                <!--Boton por defecto de nuestro header-->
-                <button id="boton-sidebar"><i class="fas fa-bars"></i></button>
-                <!--Bton que aparecera desde el modo tablet-->
-                <button id="boton-sidebar_left"><i class="fas fa-bars"></i></button>
-                <!--Boton que aparecera si es que nuestro dashboard hace scroll-->
-                <div class="navbar-bar_fixed" id="content-button_fixed">
-                    <button id="boton-sidebar_fixed"><i class="fas fa-bars"></i></button>
+            <nav class="navbar-bar">
+                <div class="navbar-bar" id="content-buttons">
+                    <!--Boton por defecto de nuestro header-->
+                    <button id="boton-sidebar"><i class="fas fa-bars"></i></button>
+                    <!--Bton que aparecera desde el modo tablet-->
+                    <button id="boton-sidebar_left"><i class="fas fa-bars"></i></button>
+                    <!--Boton que aparecera si es que nuestro dashboard hace scroll-->
+                    <div class="navbar-bar_fixed" id="content-button_fixed">
+                        <button id="boton-sidebar_fixed"><i class="fas fa-bars"></i></button>
+                    </div>
                 </div>
-            </div>
 
-            <img src="./img/logo-vabaja-sinfondo.-1067x600.png" alt="logo-hero">
+                <img src="./img/logo-vabaja-sinfondo.-1067x600.png" alt="logo-hero">
 
 
-        </nav>
+            </nav>
 
-        
+
             <!--Botones que animaran nuestro sidebar-->
 
             <div class="content" id="main">
-
 
                 <div class="card">
                     <div class="card-body text-center">
                         <h1>Somos tu proveedor de soluciones en tecnología</h1>
                     </div>
                 </div>
+
                 <div class="row">
-
                     <div class="col-lg-6 col-md-6 card text-white">
-
                         <img class="card-img" src="./img/fibra.jpg" alt="fibra">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Soluciones en infraestructura y Redes</h5>
                         </div>
-                        <p class="card-text">Descripción Servicio 1</p>
+                        <div class="footer-card span">
+                            <p class="card-text">Descripción Servicio 1</p>
+                        </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6 card text-white">
                         <img class="card-img" src="./img/opHormiga.jpg" alt="ophormiga">
                         <div class="card-img-overlay">
-                            <h5>Servicios para Administradores de Sistemas</h5>
-                        </div>
-                        <div class="card-body">
+                            <h5 class="card-title">Servicios para Administradores de Sistemas</h5>
                         </div>
                         <div class="footer-card span">
-                            <p>Descripción Servicio 2</p>
+                            <p class="card-text">Descripción Servicio 2</p>
                         </div>
                     </div>
                 </div>
+
 
                 <div class="row">
                     <div class="col-lg-6 col-md-6 card text-white">
@@ -124,8 +120,8 @@
                         <div class="card-img-overlay">
                             <h5 class="card-title">Soluciones en Desarrollo de Software</h5>
                         </div>
-                        <div class="card-text">
-                            <p>Descripción Servicio 2</p>
+                        <div class="footer-card span">
+                            <p class="card-text">Descripción Servicio 2</p>
                         </div>
                     </div>
 
@@ -134,37 +130,41 @@
                         <div class="card-img-overlay">
                             <h5 class="card-title">Soluciones en IoT (Internet of Things)</h5>
                         </div>
-                        <div class="card-text">
-                            <p>Descripción Servicio 2</p>
+                        <div class="footer-card span">
+                            <p class="card-text">Descripción Servicio 2</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- El contenedor de graficas de nuestro panel administrativo -->
-
-
-                <!--Footer o pies de nuestro dashboard-->
-
-                <div class="footer-dashboard">
-        
-                    <p>
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>© VABAJA, Listen, Learn, Improve & Repeat.
-                    </p>
-        
-                    <script src="/js/main.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                        crossorigin="anonymous">
-                    </script>
-        
-                </div>
             </div>
+
+
+            <!-- El contenedor de graficas de nuestro panel administrativo -->
+
+
+            <!--Footer o pies de nuestro dashboard-->
+
+            <div class="footer-dashboard">
+
+                <p>
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>© VABAJA, Listen, Learn, Improve & Repeat.
+                </p>
+
+                <script src="/js/main.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous">
+                    </script>
+
+            </div>
+
         </div>
+
+
     </div>
 </body>
 

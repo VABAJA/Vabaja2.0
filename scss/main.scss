@@ -217,7 +217,7 @@ nav {
     display: block;
     white-space: nowrap;
     font-size: 13px;
-    color: #fff;
+    color: $textoNegro;
     font-family: 'Poppins';
     overflow: hidden;
     margin-left: 10px;
@@ -241,7 +241,7 @@ nav {
 }
 
 .nav ul li a i {
-    color: #fff;
+    color: rgb(94, 85, 85);
     font-size: 20px;
     width: 37px;
 }
@@ -291,6 +291,9 @@ nav {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+}
+.card-text {
+    color: $textoNegro;
 }
 
 .card-chart {
@@ -393,7 +396,7 @@ nav {
 }
 
 .footer-card span {
-    color: #a8a8a8;
+    color: $textoNegro;
     font-family: 'Poppins';
     margin-left: 10px;
     font-size: 13px;
