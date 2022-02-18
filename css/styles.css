@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*Paleta de Colores*/
-/* linear-gradient(#cad3ec, #dcdce6); */
 /*Globales*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -18,8 +17,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background: #cad3ec;
-  /* linear-gradient(#e3e3f3,#9d9da8); */ }
+  background: #cad3ec; }
 
 .wrapper {
   position: relative;
@@ -29,9 +27,8 @@ body {
 .main-panel {
   width: 100%;
   min-height: 100vh;
-  border-top: 4px solid #d0d0ff;
+  border-top: 4px solid #0114c5;
   background: #cad3ec;
-  /* linear-gradient(#e3e3f3,#9d9da8); */
   transition: .5s;
   float: right; }
 
@@ -43,7 +40,7 @@ body {
   margin-left: 20px;
   z-index: 1024;
   border-radius: 5px;
-  /* background: linear-gradient(#97174D,#ca3372); */
+  background: linear-gradient(#97174D, #ca3372);
   background: #e2e2ff;
   transition-property: top,bottom,width;
   transition-duration: .2s,.2s,.35s;
@@ -68,9 +65,10 @@ body {
 
 /* Header */
 nav {
+  position: fixed;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px 35px 0px 20px; }
 
 .navbar-bar {
@@ -184,7 +182,7 @@ nav {
   display: block;
   white-space: nowrap;
   font-size: 13px;
-  color: #fff;
+  color: #000000;
   font-family: 'Poppins';
   overflow: hidden;
   margin-left: 10px;
@@ -204,7 +202,7 @@ nav {
   align-items: center; }
 
 .nav ul li a i {
-  color: #fff;
+  color: #5e5555;
   font-size: 20px;
   width: 37px; }
 
@@ -245,6 +243,9 @@ nav {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1); }
+
+.card-text {
+  color: #000000; }
 
 .card-chart {
   overflow: hidden;
@@ -314,8 +315,8 @@ nav {
 .header-card span {
   font-family: 'Poppins';
   display: flex;
-  justify-content: flex-end;
   color: #a8a8a8;
+  justify-content: flex-end;
   font-size: 10px; }
 
 .header-card h6 {
@@ -332,7 +333,7 @@ nav {
   color: #a8a8a8; }
 
 .footer-card span {
-  color: #a8a8a8;
+  color: #000000;
   font-family: 'Poppins';
   margin-left: 10px;
   font-size: 13px;

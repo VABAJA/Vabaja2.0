@@ -6,7 +6,7 @@ $color-textoBlanco: #ffff;
 $color-fondoNegro: #1E1E2E;
 $color-cardsNegro: #242424;
 $color-base: #cad3ec;
-$color-cards: #e2e2ff;/* linear-gradient(#cad3ec, #dcdce6); */
+$color-cards: #e2e2ff;
 
 /*Globales*/
 
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background: $color-base;/* linear-gradient(#e3e3f3,#9d9da8); */
+    background: $color-base;
 }
 
 .wrapper {
@@ -39,8 +39,8 @@ body {
 .main-panel {
     width: 100%;
     min-height: 100vh;
-    border-top: 4px solid $NavBar;
-    background: $color-base;/* linear-gradient(#e3e3f3,#9d9da8); */
+    border-top: 4px solid rgb(1, 20, 197);
+    background: $color-base;
     transition: .5s;
     float: right;
 }
@@ -53,7 +53,7 @@ body {
     margin-left: 20px;
     z-index: 1024;
     border-radius: 5px;
-    /* background: linear-gradient(#97174D,#ca3372); */
+    background: linear-gradient(#97174D,#ca3372);
     background: $color-cards;
     transition-property: top,bottom,width;
     transition-duration: .2s,.2s,.35s;
@@ -81,16 +81,17 @@ body {
 
 /* Header */
 nav {
+    position: fixed;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px 35px 0px 20px;
 }
-
 .navbar-bar {
     position: relative;
     display: flex;
     align-items: center;
+    
 }
 
 .navbar-bar button#boton-sidebar {
@@ -374,8 +375,8 @@ nav {
 .header-card span{
     font-family: 'Poppins';
     display: flex;
-    justify-content: flex-end;
     color: #a8a8a8;
+    justify-content: flex-end;
     font-size: 10px;
 }
 
@@ -383,7 +384,7 @@ nav {
     color: #fff;
     display: flex;
     justify-content: flex-end;
-    font-family: 'Poppins';;
+    font-family: 'Poppins';
     font-size: 20px;
 }
 
