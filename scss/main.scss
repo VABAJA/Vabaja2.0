@@ -2,13 +2,19 @@
 
 $textoNegro: #000000;
 $NavBar: #d0d0ff;
+$azul: #0114c5;
 $color-textoBlanco: #ffff;
 $color-fondoNegro: #1E1E2E;
 $color-cardsNegro: #242424;
 $color-base: #cad3ec;
 $color-cards: #e2e2ff;
+$blanco: #fff;
+
 
 /*Globales*/
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poppins';
+}
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -39,7 +45,7 @@ body {
 .main-panel {
     width: 100%;
     min-height: 100vh;
-    border-top: 4px solid rgb(1, 20, 197);
+    border-top: 4px solid $azul;
     background: $color-base;
     transition: .5s;
     float: right;
@@ -280,7 +286,7 @@ nav {
 .nav ul li a span{
     display: block;
     transition: 0.5s !important;
-    color: $NavBar;
+    color: $azul;
     font-size: 12px;
     text-decoration: none;
     font-family: 'Poppins';
@@ -332,7 +338,7 @@ nav {
 .card-title{
     margin-bottom: .5rem;
     word-wrap: break-word;
-    color:#fff;
+    color: $blanco;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -362,8 +368,14 @@ nav {
 .grid-title{
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat (1, 1fr);
+    font-size: 15px;
+}
+@media only screen and (min-width: 768) {
+    .grid-title{
+        font-size: 10px;
+    }
 
+    
 }
 .grid-row_2 {
     display: grid;
@@ -535,7 +547,55 @@ nav {
     transform: translate3d(-25px,0,0);
 }
 
+/* Contacto */
 
+.contacto-title{
+    color: $textoNegro;
+    margin-bottom: .5rem;
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-label {
+    margin-bottom: .5rem;
+    font-family: 'Poppins';
+}
+.label { 
+    display: inline-block;
+    
+}
+.form-control {
+    font-family: 'Poppins';
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn {
+    font-family: 'Poppins';
+    background-color: $azul;
+    color: $blanco;
+    width: 30%;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+.btn :hover{
+    background-color: $azul;
+    font-family: 'Poppins';
+}
 @media only screen and (max-width: 120px) {
     .sidebar {
         position: fixed;
@@ -608,6 +668,9 @@ nav {
     }
     .logo-rc::after{
         right: 0px;
+    }
+    .nav ul li a span{
+        font-size: 0px;
     }
 
     
