@@ -48,8 +48,8 @@ body {
 .sidebar {
     position: fixed;
     width: 230px;
-    height: calc(100vh - 90px);
-    margin-top: 80px;
+    height: calc(75vh - 90px);
+    margin-top: 254px;
     margin-left: 20px;
     z-index: 1024;
     border-radius: 5px;
@@ -84,13 +84,43 @@ nav {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 35px 0px 20px;
 }
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: $color-base;
+    border-bottom: 4px solid rgb(1, 20, 197);
+    
+  }
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
 .navbar-bar {
-    position: relative;
+    /* position: sticky; */
     display: flex;
     align-items: center;
+
     
 }
 
@@ -242,7 +272,7 @@ nav {
 }
 
 .nav ul li a i {
-    color: rgb(94, 85, 85);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     width: 37px;
 }
@@ -273,12 +303,12 @@ nav {
 
 /* Contenedor principal */
 .content {
-    padding: 80px 30px 30px 280px;
+    padding: 11px 30px 30px 280px;
     transition: 0.5;
 }
 
 .main {
-    padding: 80px 30px 30px 130px;
+    padding: 12px 30px 30px 130px;
     transition: 0.5;
 }
 
@@ -292,19 +322,52 @@ nav {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.card-title{
+    margin-bottom: .5rem;
+    word-wrap: break-word;
+    color:#fff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card-img{
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.card-img-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-radius: calc(.25rem - 1px);
+    margin: 0;
+    box-sizing: border-box;
 }
 .card-text {
     color: $textoNegro;
 }
+.grid-title{
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat (1, 1fr);
 
-.card-chart {
-    overflow: hidden;
-    height: auto;
 }
-
-.grid-row_4 {
+.grid-row_2 {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
 }
 
@@ -443,11 +506,12 @@ nav {
     font-size: 12px;
 }
 
-.navbar-bar button#boton-sidebar_left {
+/* .navbar-bar button#boton-sidebar_left {
     display: none;
-}
+} */
 
 /* Animación al dar click en nuestro boton sidebar */
+
 .toggle {
     width: 80px !important;
 }
@@ -472,7 +536,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 120px) {
     .sidebar {
         position: fixed;
         display: block;
@@ -489,6 +553,8 @@ nav {
         padding: 0;
         transition: .5s cubic-bezier(.685,.0473,.346,1);
         transform: translate3d(-260px,0,0);
+
+        
     }
     .sidebar.toggle {
         transition: 0.5;
@@ -505,9 +571,9 @@ nav {
     .navbar-bar_fixed button {
         display: none;
     }
-    .navbar-bar button#boton-sidebar {
+/*     .navbar-bar button#boton-sidebar {
         display: none;
-    }
+    } */
     .navbar-bar button#boton-sidebar_left {
         display: block;
     }    
@@ -529,19 +595,37 @@ nav {
         transform: translate3d(0,0,0);
     }
 }
+@media only screen and (max-width: 768px) {
+    .sidebar{
+        width: 80px ;
+    }
+    .content{
+    padding: 12px 30px 30px 130px;
+    }
+    .logo-rc{
+        font-size: 11px;
+        margin-left: -63px;
+    }
+    .logo-rc::after{
+        right: 0px;
+    }
 
-@media only screen and (max-width: 998px) {
-    .grid-row_4 {
-        grid-template-columns: repeat(2,1fr);
+    
+}
+
+@media only screen and (max-width: 564px) {
+    .grid-row_2 {
+        grid-template-columns: repeat(1,1fr);
         grid-gap: 20px;
     }
-    .grid-row_charts {
+
+/*     .grid-row_charts {
         grid-template-columns: repeat(1,1fr);
-    }
+    } */
 }
 
-@media only screen and (max-width: 768px) {
-    .grid-row_4 {
+/* @media only screen and (max-width: 768px) {
+    .card {
         grid-template-columns: repeat(1,1fr);
     }
-}
+} */
