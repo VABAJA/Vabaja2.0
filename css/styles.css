@@ -51,7 +51,7 @@ body {
 .sidebar {
   position: fixed;
   width: 230px;
-  height: calc(75vh - 90px);
+  height: calc(75vh - 150px);
   margin-top: 176px;
   margin-left: 20px;
   z-index: 1024;
@@ -355,7 +355,7 @@ nav {
 
 .card-text {
   color: #000000;
-  font-family: 'Poppins'; }
+  font-family: "Poppins"; }
 
 @media only screen and (max-width: 468px) {
   .card-text {
@@ -508,13 +508,24 @@ nav {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: space-between; }
 
 .footer-dashboard p {
   margin-top: 20px;
   color: #000000;
   font-family: "Poppins";
   font-size: 12px; }
+
+.redes {
+  display: inline;
+  flex-direction: column; }
+
+@media only screen and (max-width: 468px) {
+  .footer-dashboard {
+    flex-direction: column; }
+  .enlaces {
+    display: flex;
+    justify-content: center; } }
 
 /* .navbar-bar button#boton-sidebar_left {
     display: none;
