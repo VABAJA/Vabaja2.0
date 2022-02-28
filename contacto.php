@@ -1,5 +1,31 @@
 <?php
-$name = $_POST['name'];
+if ($_POST['g-recaptcha-response'] == '') {
+  echo "Captcha invalido";
+  } else {
+  $obj = new stdClass();
+  $obj->secret = "6LfRSNISAAAAACKaHw2e-JvgeG-3src_dRGpL-Ql";
+  $obj->response = $_POST['g-recaptcha-response'];
+  $obj->remoteip = $_SERVER['REMOTE_ADDR'];
+  $url = 'https://www.google.com/recaptcha/api/siteverify';
+  
+  $options = array(
+  'http' => array(
+  'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+  'method' => 'POST',
+  'content' => http_build_query($obj)
+  )
+  );
+  $context = stream_context_create($options);
+  $result = file_get_contents($url, false, $context);
+  
+  $validar = json_decode($result);
+  
+  /* FIN DE CAPTCHA */
+  
+  if($validar->success){
+
+    
+    $name = $_POST['name'];
 $mail = $_POST['mail'];
 $city = $_POST['ciudad'];
 $phone = $_POST['phone'];
@@ -22,4 +48,9 @@ $asunto = 'Mensaje de Formulario Web';
 
 mail($para, $asunto, utf8_decode($message), $header);
 header("Location:confirmacion.html");
+} else {
+  echo "Captcha invalido";
+  }
+}
+
 ?>
