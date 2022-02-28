@@ -764,6 +764,11 @@ nav {
     .nav ul li a span {
         font-size: 0px;
     }
+    grid-row_contacto{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        
+    }
 }
 
 @media only screen and (max-width: 564px) {
@@ -771,6 +776,7 @@ nav {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
     }
+    
     .boton {
         width: 100%;
     }
