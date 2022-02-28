@@ -11,8 +11,8 @@ p,
 ul {
   font-family: "Poppins"; }
 
-.glow {
-  box-shadow: 0px 0px 5px black; }
+a {
+  text-decoration: none; }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
