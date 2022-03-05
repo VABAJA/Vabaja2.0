@@ -454,6 +454,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+    
 }
 @media only screen and (max-width: 1040px) {
     .grid-contacto {
@@ -660,7 +661,7 @@ nav {
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -765,10 +766,34 @@ nav {
     .nav ul li a span {
         font-size: 0px;
     }
-    grid-row_contacto{
+    grid-row_contacto {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
-        
+    }
+}
+@media only screen and (max-width: 424px) {
+    #gwd-reCAPTCHA_2 {
+        transform: scale(0.84);
+        transform-origin: 0 0;
+    }
+    #gwd-reCAPTCHA_2,
+    #rc-imageselect {
+        transform: scale(0.84);
+        transform-origin: 0 0;
+    }
+    #gwd-reCAPTCHA_2,
+    #rc-imageselect {
+        -webkit-transform: scale(0.84);
+        -moz-transform: scale(0.84);
+        -ms-transform: scale(0.84);
+        -o-transform: scale(0.84);
+        transform: scale(0.84);
+
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
     }
 }
 
@@ -777,15 +802,11 @@ nav {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
     }
-    
+
     .boton {
         width: 100%;
     }
     .sidebar {
         height: calc(75vh - 145px);
     }
-    .g-recaptcha{
-        
-    }
 }
-
