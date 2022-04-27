@@ -25,6 +25,12 @@ ul {
 a {
     text-decoration: none;
 }
+.descargables {
+    width: 49%;
+    display: flex;
+    justify-content: space-around;
+}
+}
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -313,7 +319,7 @@ nav {
 }
 
 .nav ul li {
-    padding: 30px;
+    padding: 22px;
 }
 
 .nav ul li a {
@@ -690,6 +696,7 @@ nav {
     width: 60%;
     font-size: 1rem;
     border-radius: 0.5rem;
+    text-align: center;
 }
 .boton:hover {
     background-color: $NavBar;
