@@ -30,7 +30,7 @@ a {
     display: flex;
     justify-content: space-around;
 }
-}
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -802,6 +802,9 @@ nav {
         -o-transform-origin: 0 0;
         transform-origin: 0 0;
     }
+    .descargables {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 564px) {
@@ -815,5 +818,8 @@ nav {
     }
     .sidebar {
         height: calc(75vh - 145px);
+    }
+    .descargables{
+        width:100%;
     }
 }
