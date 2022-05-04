@@ -26,8 +26,9 @@ a {
     text-decoration: none;
 }
 .descargables {
-    width: 49%;
+    width: 53%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -61,7 +62,7 @@ body {
 
 .main-panel {
     width: 100%;
-    min-height: 100vh;
+    min-height: 84vh;
     border-top: 4px solid $azul;
     background: $color-base;
     transition: 0.5s;
@@ -451,9 +452,9 @@ nav {
         font-size: 8px;
     }
 }
-.grid-row_2 {
+.grid-row_3 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
 .grid-contacto {
@@ -808,7 +809,7 @@ nav {
 }
 
 @media only screen and (max-width: 564px) {
-    .grid-row_2 {
+    .grid-row_3 {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
     }
@@ -821,5 +822,13 @@ nav {
     }
     .descargables{
         width:100%;
+    }
+}
+@media (min-width: 565px) and (max-width:960px) {
+    .grid-row_3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .descargables{
+        width:80%;
     }
 }

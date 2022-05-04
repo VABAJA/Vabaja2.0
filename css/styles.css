@@ -15,8 +15,9 @@ a {
   text-decoration: none; }
 
 .descargables {
-  width: 49%;
+  width: 53%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around; }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -46,7 +47,7 @@ body {
 
 .main-panel {
   width: 100%;
-  min-height: 100vh;
+  min-height: 84vh;
   border-top: 4px solid #1e31d6;
   background: #cad3ec;
   transition: 0.5s;
@@ -387,9 +388,9 @@ nav {
   .grid-title {
     font-size: 8px; } }
 
-.grid-row_2 {
+.grid-row_3 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px; }
 
 .grid-contacto {
@@ -690,7 +691,7 @@ nav {
     flex-direction: column; } }
 
 @media only screen and (max-width: 564px) {
-  .grid-row_2 {
+  .grid-row_3 {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px; }
   .boton {
@@ -699,3 +700,9 @@ nav {
     height: calc(75vh - 145px); }
   .descargables {
     width: 100%; } }
+
+@media (min-width: 565px) and (max-width: 960px) {
+  .grid-row_3 {
+    grid-template-columns: repeat(2, 1fr); }
+  .descargables {
+    width: 80%; } }
