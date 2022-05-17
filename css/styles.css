@@ -600,7 +600,8 @@ nav {
   .form-label {
     font-size: 0.9rem; } }
 
-.boton {
+.boton,
+.boton2 {
   font-family: "Poppins";
   background-color: #1e31d6;
   color: #fff;
@@ -610,7 +611,11 @@ nav {
   border-radius: 0.5rem;
   text-align: center; }
 
-.boton:hover {
+.boton2 {
+  width: 90% !important; }
+
+.boton:hover,
+.boton2:hover {
   background-color: #d0d0ff;
   color: #000000; }
 
@@ -702,14 +707,21 @@ nav {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px; }
   .boton {
-    width: 100%; }
+    width: 90%; }
   .sidebar {
     height: calc(75vh - 145px); }
-  .descargables {
-    width: 100%; } }
+  /* .descargables {
+    width: 100%;
+  } */ }
 
 @media (min-width: 565px) and (max-width: 960px) {
   .grid-row_3 {
-    grid-template-columns: repeat(2, 1fr); }
-  .descargables {
-    width: 80%; } }
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 1300px) {
+  .grid-row_2 {
+    grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 960px) {
+  .grid-row_2 {
+    grid-template-columns: repeat(1, 1fr); } }

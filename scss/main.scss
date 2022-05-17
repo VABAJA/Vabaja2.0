@@ -695,7 +695,8 @@ nav {
     font-size: 0.9rem;
   }
 }
-.boton {
+.boton,
+.boton2 {
   font-family: "Poppins";
   background-color: $azul;
   color: $blanco;
@@ -704,11 +705,17 @@ nav {
   font-size: 1rem;
   border-radius: 0.5rem;
   text-align: center;
+  
 }
-.boton:hover {
+.boton2 {
+  width: 90% !important;
+}
+.boton:hover,
+.boton2:hover {
   background-color: $NavBar;
   color: $textoNegro;
 }
+
 @media only screen and (max-width: 120px) {
   .sidebar {
     position: fixed;
@@ -821,20 +828,28 @@ nav {
   }
 
   .boton {
-    width: 100%;
+    width: 90%;
   }
   .sidebar {
     height: calc(75vh - 145px);
   }
-  .descargables {
+  /* .descargables {
     width: 100%;
-  }
+  } */
 }
 @media (min-width: 565px) and (max-width: 960px) {
+  
   .grid-row_3 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .descargables {
-    width: 80%;
+}
+@media (max-width: 1300px) {
+  .grid-row_2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 960px) {
+  .grid-row_2 {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
