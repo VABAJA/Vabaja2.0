@@ -725,3 +725,14 @@ nav {
 @media (max-width: 960px) {
   .grid-row_2 {
     grid-template-columns: repeat(1, 1fr); } }
+
+.contenedor {
+  width: 50%;
+  height: 200px;
+  background-color: #0114c5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+#logoFirma {
+  max-width: 65%; }
