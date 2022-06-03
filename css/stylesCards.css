@@ -1,6 +1,6 @@
 html {
     font-family: 'Arimo', sans-serif;
-    background-color: #cad3ec;
+    
 
 }
 
@@ -8,6 +8,8 @@ body {
 
     margin: 0rem;
     padding: 0rem;
+    text-align: center;
+    background-color: #cad3ec !important;
 }
 
 /* FONDO  */
@@ -24,7 +26,6 @@ body {
 
 .cont {
     width: 100%;
-    margin-top: -12%;
 }
 
 /* GLOBALES */
@@ -33,31 +34,42 @@ h1,
 h2 {
     color: black;
 }
-.icon{
+
+.icon {
     max-width: 3rem;
 }
+
 a {
     text-decoration: none;
 }
+a:visited {
+    text-decoration: none;
+  }
+
 
 /* HEADER  */
 .hero {
     width: 100%;
-    background-image: url(../img/alireza-khatami-f1PWFi2DNvI-unsplash.jpg) ;
+    background-image: url(../img/alireza-khatami-f1PWFi2DNvI-unsplash.jpg);
     height: 13rem;
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .header {
     display: flex;
-    justify-content:flex-end;
-    
+    justify-content: flex-end;
+
 }
 
 .logo {
     max-width: 18rem;
+    margin-bottom: -27px;
+    margin-top: -3%;
+    display: block;
 }
+
 
 .lema {
     font-size: 1.3rem;
@@ -69,12 +81,13 @@ a {
     flex-direction: column;
     align-items: center;
     margin-right: 5px;
+    margin-top: -12rem;
 }
 
 /* NAV  */
 .objectfit {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .objectfit>img {
@@ -87,6 +100,7 @@ a {
     background-color: black;
     border: 3px solid #b20000;
 }
+
 nav {
     width: 100%;
     height: 20rem;
@@ -94,6 +108,7 @@ nav {
     flex-direction: column;
     margin-top: -111px;
 }
+
 .nombre_puesto {
     display: flex;
     flex-direction: column;
@@ -101,41 +116,76 @@ nav {
 }
 
 /* ENLACES  */
-.icon {
-    max-width: 2.5rem;
-}
+
 .cont-enlaces {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .enlaces {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: 5rem;
+    margin-bottom: 3rem;
 }
+
 .links {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
 }
+.fondo_enlaces {
+    padding: 16px;
+    background-color: transparent;
+    border-radius: 2.5rem;
+}
+.fondo_enlaces:hover {
+    background: black;
+    color: white;
+
+}
+
+/* NOSOTROS  */
+.nosotros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    
+}
+.presentacion {
+    width: 70%;
+    background-image: url(../img/software.jpg);
+    border-radius: 3.5rem;    
+    margin-bottom:1rem;
+    
+}
+
+
 /* MAP */
 .map {
     width: 100%;
     height: 19rem;
     display: flex;
     justify-content: center;
-    
-    margin-bottom: -12rem;
 }
 
 /* FOOTER  */
+.espacio
+.footer
+.triangulo2{
+    width: 33%;
 
-footer{
-    display: flex;
-    justify-content: flex-end;
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .triangulo2 {
     width: 0;
     height: 0;
@@ -143,4 +193,49 @@ footer{
     border-top: 100px solid transparent;
     border-left: 100px solid transparent;
     border-bottom: 100px solid #000;
+}
+
+/* MEDIA QUERIES  */
+@media (max-width: 650px) {
+    .hero {
+        height: 20rem;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .objectfit {
+        justify-content: center !important;
+    }
+
+    .logo_lema {
+        max-width: 73%;
+    }
+
+    .cont-enlaces {
+        margin-top: 1.2rem;
+
+    }
+
+    .enlaces {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 8rem;
+        margin-bottom: 2rem;
+
+    }
+
+
+}
+
+@media (min-width: 960px) {
+    .objectfit {
+        justify-content: center !important;
+    }
+
+    .enlaces {
+        width: 60%;
+    }
+
 }
