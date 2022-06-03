@@ -1,6 +1,6 @@
 html {
     font-family: 'Arimo', sans-serif;
-    background-color: #cad3ec;
+    
 
 }
 
@@ -8,6 +8,8 @@ body {
 
     margin: 0rem;
     padding: 0rem;
+    text-align: center;
+    background-color: #cad3ec !important;
 }
 
 /* FONDO  */
@@ -24,7 +26,6 @@ body {
 
 .cont {
     width: 100%;
-    margin-top: -12%;
 }
 
 /* GLOBALES */
@@ -41,6 +42,10 @@ h2 {
 a {
     text-decoration: none;
 }
+a:visited {
+    text-decoration: none;
+  }
+
 
 /* HEADER  */
 .hero {
@@ -76,36 +81,13 @@ a {
     flex-direction: column;
     align-items: center;
     margin-right: 5px;
-}
-@media (min-width: 100px) and (max-width: 560px) {
-    .logo_lema {
-        margin-top: -12%;
-}
-@media (max-width: 960px) {
-    .logo_lema {
-        margin-top: -12%;
-    }
-    
-}
-
-@media (max-width: 560px) {
-    .logo {
-        
-    }
-
-    .logo_lema {
-        margin-top: -31%;
-
-    }
-    .objectfit {
-        flex-direction: column;
-    }
+    margin-top: -12rem;
 }
 
 /* NAV  */
 .objectfit {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .objectfit>img {
@@ -134,9 +116,6 @@ nav {
 }
 
 /* ENLACES  */
-.icon {
-    max-width: 2.5rem;
-}
 
 .cont-enlaces {
     width: 100%;
@@ -145,17 +124,46 @@ nav {
 }
 
 .enlaces {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .links {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
 }
+.fondo_enlaces {
+    padding: 16px;
+    background-color: transparent;
+    border-radius: 2.5rem;
+}
+.fondo_enlaces:hover {
+    background: black;
+    color: white;
+
+}
+
+/* NOSOTROS  */
+.nosotros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    
+}
+.presentacion {
+    width: 70%;
+    background-image: url(../img/software.jpg);
+    border-radius: 3.5rem;    
+    margin-bottom:1rem;
+    
+}
+
 
 /* MAP */
 .map {
@@ -163,15 +171,19 @@ nav {
     height: 19rem;
     display: flex;
     justify-content: center;
-
-    margin-bottom: -12rem;
 }
 
 /* FOOTER  */
+.espacio
+.footer
+.triangulo2{
+    width: 33%;
 
+}
 footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .triangulo2 {
@@ -181,4 +193,49 @@ footer {
     border-top: 100px solid transparent;
     border-left: 100px solid transparent;
     border-bottom: 100px solid #000;
+}
+
+/* MEDIA QUERIES  */
+@media (max-width: 650px) {
+    .hero {
+        height: 20rem;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .objectfit {
+        justify-content: center !important;
+    }
+
+    .logo_lema {
+        max-width: 73%;
+    }
+
+    .cont-enlaces {
+        margin-top: 1.2rem;
+
+    }
+
+    .enlaces {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 8rem;
+        margin-bottom: 2rem;
+
+    }
+
+
+}
+
+@media (min-width: 960px) {
+    .objectfit {
+        justify-content: center !important;
+    }
+
+    .enlaces {
+        width: 60%;
+    }
+
 }

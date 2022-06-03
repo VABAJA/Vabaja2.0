@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="../css/stylesCards.css">
     <title>Software & Control</title>
 </head>
@@ -22,6 +25,7 @@
         <header class="cont">
 
             <div class="header">
+
                 <div class="logo_lema">
                     <img class="logo" src="../img/ContornoBLanco.png" alt="logo">
                     <h1 class="lema">Listen, Learn, Improve & Repeat</h1>
@@ -45,46 +49,110 @@
     </nav>
     <section class="cont-enlaces">
         <div class="enlaces">
-
+            <a class="links" href="https://www.vabaja.com.mx">
+                <div class="fondo_enlaces">
+                    <i class="fa-3x fa-brands fa-chrome"></i>
+                    <p> Website</p>
+                </div>
+            </a>
             <a class="links" href="https://github.com/VABAJA">
-                <img class="icon" src="../img/github-brands.svg" alt="GitHub">
-                <p> GitHub</p>
+                <div class="fondo_enlaces">
+                    <i class="fa-3x fa-brands fa-github"></i>
+                    <p> GitHub</p>
+                </div>
             </a>
             <a class="links" href="https://www.linkedin.com/company/vabaja">
-                <img class="icon" src="../img/linkedin-brands.svg" alt="LinkedIn">
-                <p> LinkedIn</p>
+                <div class="fondo_enlaces">
+                    <i class="fa-3x fa-brands fa-linkedin"></i>
+                    <p> LinkedIn</p>
+                </div>
             </a>
             <a class="links" href="https://www.facebook.com/GrupoVabaja">
-                <img class="icon" src="../img/facebook-brands.svg" alt="facebook">
-                <p> facebook</p>
+                <div class="fondo_enlaces">
+
+                    <i class="fa-3x fa-brands fa-facebook"></i>
+                    <p> facebook</p>
+                </div>
             </a>
             <a class="links" href="https://walink.co/ffc42e">
-                <img class="icon" src="../img/whatsapp-brands(2).svg" alt="WhatsApp">
-                <p> WhatsApp</p>
+                <div class="fondo_enlaces">
+                    <i class="fa-3x fa-brands fa-whatsapp"></i>
+                    <p> WhatsApp</p>
+                </div>
             </a>
-            <a class="links" href="jbarrera@vabaja.com.mx">
-                <img class="icon" src="../img/envelope-solid.svg" alt="email">
-                <p> email</p>
+            <a class="links" href="mailto:jbarrera@vabaja.com.mx">
+                <div class="fondo_enlaces">
+                    <i class="fa-3x fa-solid fa-at"></i>
+                    <p> email</p>
+                </div>
             </a>
             <a class="links" href="tel:+5281150208945">
-                <img class="icon" src="../img/phone-flip-solid.svg" alt="telefono">
-                <p>Contacto</p>
+                <div class="fondo_enlaces">
+                    <i class="fa-3x fa-solid fa-mobile-screen"></i>
+                    <p>Contacto</p>
+                </div>
             </a>
 
         </div>
 
     </section>
-
+    <section class="nosotros">
+        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <h3>Nuestros Productos y Servicios</h3>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../img/IT.jpg" class="d-block w-100" alt="IT">
+                <div class="carousel-caption d-md-block">
+                  <h5>Soluciones en Tecnología</h5>
+                  <p>Infraestructura, Redes y Soluciones para administradores de sistemas</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="../img/controlPotencia.jpg" class="d-block w-100" alt="Industria">
+                <div class="carousel-caption d-md-block">
+                  <h5>Soluciones para la Industria</h5>
+                  <p>Control de Potencia y Automatización, proyectos llave en mano y capacitación</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="../img/IoT_servicios.jpg" class="d-block w-100" alt="iot">
+                <div class="carousel-caption d-md-block">
+                  <h5>Soluciones en IoT & Software</h5>
+                  <p>Dispositivos IoT & Software a medida, nos enfocamos en sus necesidades para entregar soluciones integrales</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
     <section class="map">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.9304780223675!2d-100.36002022071473!3d25.74584011091738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866297bdc81482e3%3A0xdfd2a447b91c1aca!2svabaja!5e0!3m2!1ses-419!2smx!4v1646085819261!5m2!1ses-419!2smx"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </section>
     <footer>
+        <h5 class="footer">
+            <script>document.write(new Date().getFullYear())</script>
+            © VABAJA, Listen, Learn, Improve & Repeat.
+        </h5>
         <div class="triangulo2">
         </div>
     </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
 
 </body>
 
