@@ -1,7 +1,9 @@
 html {
     font-family: 'Arimo', sans-serif;
-    
-
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -55,6 +57,7 @@ a:visited {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
 }
 
 .header {

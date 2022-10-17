@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es-MX" id="html">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6XWEWQW8BR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6XWEWQW8BR");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Soluciones en Tecnología" />
+    <meta
+      description="VABAJA, somos tu proveedor de tecnología y soluciones en sistemas para la industria, comercio y residencia, estamos a tus ordenes."
+    />
+    <meta
+      keywords="site, computo, sistemas, IT, cableado estructurado, monterrey, servicios de soporte, instalación de nodos, software, iot, control de potencia, drives, soft starters, motores, variadores, arrancadores"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Soluciones de Tecnología - Cotizaor de Refacciones</title>
+
+    <body>
+      <!--Sidebar-->
+      <div class="sidebar" id="sidebar">
+        <!--Contenedor de nuestro sidebar-->
+        <div class="sidebar-wrapper">
+          <div class="logo-rc">
+            <img src="" />
+            <span>Bienvenido</span>
+          </div>
+          <div class="nav">
+            <ul>
+              <li>
+                <a href="../index.html" title="Inicio">
+                  <i class="fas fa-home"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
+              <li>
+                <a href="./productos.html" title="Productos">
+                  <i class="fas fa-desktop"></i>
+                  <span>Productos</span>
+                </a>
+              </li>
+              <li>
+                <a href="./nosotros.html" title="Nosotros">
+                  <i class="fas fa-users"></i>
+                  <span>Nosotros</span>
+                </a>
+              </li>
+              <li>
+                <a href="./servicios.html" title="Servicios">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Servicios</span>
+                </a>
+              </li>
+              <li>
+                <a href="./contacto.html" title="Contacto">
+                  <i class="fas fa-envelope"></i>
+                  <span>Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Contiene todo el cuerpo del panel-->
+      <!--Header de la página-->
+
+      <nav class="navbar-bar sticky-top" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar nav">
+            <button>
+              <a href="../index.html"
+                ><img
+                  src="../img/logo-vabaja-sinfondo.-1067x600.png"
+                  class="img-fluid"
+                  style="font-size: 30px; cursor: pointer"
+                  alt="logo-hero"
+              /></a>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-panel">
+        <div class="content" id="main">
+          <div style="">
+            <div class="row">
+              <div class="grid-title">
+                <div class="card">
+                  <h3 style="text-align: center">
+                    Cotiza tus refacciones aquí, te responderemos a la brevedad.
+                  </h3>
+                  <form action="#" id="cotizador">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">Nombre Completo</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombreCompleto"
+                        placeholder="Tu Nombre Completo"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">Tipo de Refacción</span>
+                      <input
+                        type="string"
+                        class="form-control"
+                        id="tipo"
+                        placeholder="Tipo de Refacción (Pantalla, ventilador, teclado, etc)"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">Número de Parte</span>
+                      <input
+                        type="string"
+                        class="form-control"
+                        id="numeroParte"
+                        placeholder="Tu Número de Parte"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">Marca del Producto</span>
+                      <input
+                        type="string"
+                        class="form-control"
+                        id="marca"
+                        placeholder="La marca de tu Producto"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <button class="boton" type="submit" id="submit">
+                        Solicitar Cotización
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://kit.fontawesome.com/4413e8152d.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./js/main.js"></script>
+    </body>
+  </head>
+</html>
