@@ -105,12 +105,12 @@
             <div class="row">
               <div class="grid-title">
                 <div class="card">
-                  <h3 style="text-align: center">
+                  <h3 style="text-align: center; margin-bottom: 30px">
                     Cotiza tus refacciones aquí, te responderemos a la brevedad.
                   </h3>
                   <form action="#" id="cotizador">
-                    <div class="input-group mb-3">
-                      <span class="form-label">Nombre Completo</span>
+                    <div class="grid-contacto">
+                      <label class="form-label">Nombre Completo</label>
                       <input
                         type="text"
                         class="form-control"
@@ -118,8 +118,8 @@
                         placeholder="Tu Nombre Completo"
                       />
                     </div>
-                    <div class="input-group mb-3">
-                      <span class="form-label">Tipo de Refacción</span>
+                    <div class="grid-contacto">
+                      <label class="form-label">Tipo de Refacción</label>
                       <input
                         type="string"
                         class="form-control"
@@ -127,8 +127,8 @@
                         placeholder="Tipo de Refacción (Pantalla, ventilador, teclado, etc)"
                       />
                     </div>
-                    <div class="input-group mb-3">
-                      <span class="form-label">Número de Parte</span>
+                    <div class="grid-contacto">
+                      <label class="form-label">Número de Parte</label>
                       <input
                         type="string"
                         class="form-control"
@@ -136,8 +136,8 @@
                         placeholder="Tu Número de Parte"
                       />
                     </div>
-                    <div class="input-group mb-3">
-                      <span class="form-label">Marca del Producto</span>
+                    <div class="grid-contacto">
+                      <label class="form-label">Marca del Producto</label>
                       <input
                         type="string"
                         class="form-control"
@@ -146,7 +146,7 @@
                       />
                     </div>
                     <div class="col-12">
-                      <button class="boton" type="submit" id="submit">
+                      <button class="boton" type="submit" id="enviarCot">
                         Solicitar Cotización
                       </button>
                     </div>
@@ -161,7 +161,8 @@
         src="https://kit.fontawesome.com/4413e8152d.js"
         crossorigin="anonymous"
       ></script>
-      <script src="./js/main.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="../js/main.js"></script>
     </body>
   </head>
 </html>

@@ -1,5 +1,5 @@
 
-const botonEnviar = document.getElementById('Enviar')
+const botonEnviar = document.getElementById('enviarCot')
 
 botonEnviar.addEventListener('click', function() {
     Swal.fire({
@@ -22,7 +22,7 @@ function isMobile() {
 }
 
 const formulario = document.querySelector('#cotizador');
-const buttonSubmit = document.querySelector('#submit');
+const buttonSubmit = document.querySelector('#enviarCot');
 const urlDesktop = 'https://web.whatsapp.com/';
 const urlMobile = 'whatsapp://';
 const telefono = '+528115028945';
@@ -46,7 +46,7 @@ formulario.addEventListener('submit', (event) => {
         
         let marca = document.querySelector('#marca').value
 
-        let mensaje = 'send?phone=' + telefono + '&text=*Busqueda de Refacción*%0A*Hola, mi nombre es*%0A' + nombreCompleto + '%0ANecesito un@' + tipo + '%0A*con número de parte*%0A' + numeroParte + '%0A*para un equipo de la marca*%0A' + marca + ''
+        let mensaje = 'send?phone=' + telefono + '&text=*Formulario de autollenado, búsqueda de refacciones*%0A*Hola, mi nombre es*%0A' + nombreCompleto + '%0ANecesito un@*%0A' + tipo + '%0A*con número de parte*%0A' + numeroParte + '%0A*para un equipo de la marca*%0A' + marca + ''
         if(isMobile()) {
             window.open(urlMobile + mensaje, '_blank')
         }else{
