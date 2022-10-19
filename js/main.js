@@ -1,4 +1,3 @@
-
 const botonEnviar = document.getElementById('enviarCot')
 
 botonEnviar.addEventListener('click', function() {
@@ -30,12 +29,12 @@ const telefono = '+528115028945';
 formulario.addEventListener('submit', (event) => {
     event.preventDefault()
     buttonSubmit.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i>'
-    Swal.fire({
-        title: '¡Gracias por contáctarnos!',
-        text: 'Ya tenemos la información de la refacción que buscas, en breve nos comunicaremos contigo.',
-        icon: 'success',
-        confirmButtonText: 'OK'
-      })
+    // Swal.fire({
+    //     title: '¡Gracias por contáctarnos!',
+    //     text: 'Ya tenemos la información de la refacción que buscas, en breve nos comunicaremos contigo.',
+    //     icon: 'success',
+    //     confirmButtonText: 'OK'
+    //   })
     buttonSubmit.disabled = true
     setTimeout(() => {
         let nombreCompleto = document.querySelector('#nombreCompleto').value
